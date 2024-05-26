@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class GenderBox extends StatelessWidget {
-  const GenderBox({super.key});
+  const GenderBox({super.key, required this.gender});
+
+  final String gender;
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +14,10 @@ class GenderBox extends StatelessWidget {
         color: Colors.grey[350],
         borderRadius: BorderRadius.circular(12),
       ),
-      child: const Center(
+      child: Center(
         child: Text(
-          'Female',
-          style: TextStyle(
+          gender,
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w400,
           ),

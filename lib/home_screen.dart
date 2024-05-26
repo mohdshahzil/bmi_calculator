@@ -13,15 +13,17 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Container(
           margin: const EdgeInsets.all(15.0),
-          child: Column(
+          child: const Column(
             children: [
               Row(
                 children: [
                   Expanded(
-                    child: GenderBox(),
+                    child: GenderBox(gender: "Male"),
                   ),
                   Expanded(
-                    child: GenderBox(),
+                    child: GenderBox(
+                      gender: "Female",
+                    ),
                   ),
                 ],
               )
