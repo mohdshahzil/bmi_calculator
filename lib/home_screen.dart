@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/ui/gender_box.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,28 +18,10 @@ class HomeScreen extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Container(
-                        margin: const EdgeInsets.all(5),
-                        height: 200,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[350],
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: const Center(
-                          child: Text('Male'),
-                        )),
+                    child: GenderBox(),
                   ),
                   Expanded(
-                    child: Container(
-                        margin: const EdgeInsets.all(5),
-                        height: 200,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[350],
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: const Center(
-                          child: Text('Female'),
-                        )),
+                    child: GenderBox(),
                   ),
                 ],
               )
