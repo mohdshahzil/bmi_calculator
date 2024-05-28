@@ -1,5 +1,6 @@
 import 'package:bmi_calculator/ui/gender_box.dart';
 import 'package:bmi_calculator/ui/height_box.dart';
+import 'package:bmi_calculator/ui/weight_box.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -53,7 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            HeightBox(),
+            const HeightBox(),
+            const WeightBox(),
           ],
         ),
       ),
