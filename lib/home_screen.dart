@@ -1,7 +1,9 @@
+import 'package:bmi_calculator/ui/calculate_button.dart';
 import 'package:bmi_calculator/ui/gender_box.dart';
 import 'package:bmi_calculator/ui/height_box.dart';
 import 'package:bmi_calculator/ui/weight_box.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -56,6 +58,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const HeightBox(),
             const WeightBox(),
+            const Row(
+              children: [
+                Expanded(
+                  child: CalculateButton(),
+                ),
+              ],
+            )
           ],
         ),
       ),
